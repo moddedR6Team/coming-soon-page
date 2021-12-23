@@ -1,0 +1,279 @@
+/*tables of content*/
+/*
+0.mobile first
+1. All html pages
+2.general classes
+3.discord classes
+4.download classes
+5.
+6.
+7.
+8.
+*/
+
+/*0.mobile first
+
+/*begin of mobile*/
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/*end of mobile*/
+
+/*1.All html pages
+  begin*/
+
+/*Background stuff that i copy pasted from the internet*/
+ html, body {
+  margin:0;
+  
+  overflow: hidden;
+} 
+
+.bg-container {
+  width:100%;
+  height:100%;
+  box-sizing:border-box;
+  background-image: url("../img/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*Copy paste end*/
+
+body {
+    background-color: rgb(56, 55, 55);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255)
+}
+#underline {
+  text-decoration: underline;
+}
+a {
+  color: #ffffff;
+}
+/*iframes positions*/
+iframe {
+  float: left;
+  margin-left: 2%;
+  position: relative;
+}
+/*end all html pages*/
+
+/*2.general classes
+  begin*/
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(0, 128, 0);
+    padding: 10px;
+}
+#days, #hours, #minutes, #seconds {
+  display: inline-block;
+  vertical-align: top;
+    
+    font-size: 2em;
+    line-height: 28px;
+}
+.center-text {
+    text-align: center;
+}
+
+.white {
+    background-color: rgb(56, 55, 55); /*white color but it's actualy black*/
+}
+.workinprogresss {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.vertical_center_Index {
+  margin-top: 18%;
+}
+
+/*.title {
+  text-align: center;
+  background-color: rgb(56, 55, 55);
+  margin-top: 1% !important;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}*/
+/*start nav*/
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  list-style: none;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+  
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+/* end nav */
+
+
+/*3.discord classes
+  begin*/
+.discordEmbed {
+  border: 3px solid rgb(0, 0, 255);
+  min-width: 450px;
+  margin-top: 1%;
+  height: 550px;
+  -ms-overflow-style: none;/* Hide scrollbar for IE, Edge */
+  scrollbar-width: none; /*Hide scrollbar for Firefox */
+  overflow-y: scroll;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.discordEmbed::-webkit-scrollbar {
+  display: none;
+}
+
+.discordEmbed-TB {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  /* overflow-y: scroll; */
+  
+}
+
+.discordEmbed-TB::before {
+  content: "";
+  background-image: url("/img/logos/logo-TB.png");
+  background-size: contain;
+  background-position: top center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.46;
+  }
+  
+
+.discordEmbed-MR {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.discordEmbed-MR::before {
+  content: "";
+  background-image: url("/img/logos/logo-MR.png");
+  background-size: contain;
+  background-position: top center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.46;
+}
+
+.discordEmbed-MU {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+    
+.discordEmbed-MU::before {
+  content: "";
+  background-image: url("/img/logos/logo-MU.png");
+  background-size: contain;
+  background-position: top center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.46;
+}
+  
+.discordEmbedText {
+  position: relative;
+  color: #ffffff;
+  line-height: 0.9;
+  text-align: center;
+  font-weight:inherit;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px rgb(0, 0, 0), 0 0 5px rgb(19, 18, 18);
+  
+}
+/*divide discord.html in 3 columns*/
+.column{
+  float: left;
+  margin-left: 3%;
+  padding-bottom: 2%;
+  width: 29.2%;
+  
+}
+.discordRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.discordRow {
+  margin-top: 7%;
+}
+/*end of discord dividing*/
+/*end classes discord.html*/
+
+/*4.download classes
+  begin*/
+.download-field {
+  border: 3px solid blue;
+  float: left;
+  margin-left: 1%;
+  padding-bottom: 2%;
+  width: 12.85%;
+  height: 150px;
+  list-style: none;
+  margin-top: 1%;
+  min-width: 200px;
+}
+/*backgrounds downloads links boxborder*/
+.y1download {
+  background-image: url("/img/download/r6s-seasons-y1s1.jpg");
+}
+.y2download {
+  background-image: url("/img/download/r6s-seasons-y2s1.jpg");
+}
+.y3download {
+  background-image: url("/img/download/r6s-seasons-y3s3.webp");
+}
+.y4download {
+  background-image: url("/img/download/r6s-seasons-y4s3.jpg");
+  background-size: cover;
+}
+.y5download {
+  background-image: url("/img/download/r6s-seasons-y5s1.webp");
+}
+.y6download {
+  background-image: url("/img/download/r6s-seasons-y6s3.webp");
+}
+.y7download {
+  background-image: url("/img/download/r6s-seasons-y7s0.PNG");
+  background-size: cover;
+  background-position: center;
+}
